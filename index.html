@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Turquoise Topraisar | Restaurant Constanța</title>
+    <meta name="description" content="Restaurant Turquoise Topraisar oferă o experiență autentică și preparate memorabile. Rezervă o masă azi și bucură-te de un meniu delicios într-o atmosferă premium.">
+    
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="Restaurant Turquoise Topraisar">
+    <meta property="og:description" content="Experiență autentică și preparate memorabile la Topraisar, Constanța.">
+    <meta property="og:type" content="restaurant">
+    <meta property="og:url" content="https://turquoise-topraisar.ro/">
+    <meta property="og:image" content="mainhomepageoftherestaurant.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Restaurant Turquoise",
+      "image": "mainhomepageoftherestaurant.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ȘOS NAȚIONALĂ 72A",
+        "addressLocality": "Topraisar",
+        "postalCode": "907285",
+        "addressCountry": "RO"
+      },
+      "telephone": "+40766480730",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "09:30",
+          "closes": "22:00"
+        }
+      ],
+      "menu": "https://turquoise-topraisar.ro/#menu",
+      "servesCuisine": ["Romanian", "Mediterranean", "Pizza", "Grill"]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Sticky Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Turquoise</a>
+            <nav class="nav-links">
+                <a href="#home" data-i18n="navHome">Acasă</a>
+                <a href="#about" data-i18n="navAbout">Despre</a>
+                <a href="#menu" data-i18n="navMenu">Meniu</a>
+                <a href="#gallery" data-i18n="navGallery">Galerie</a>
+                <a href="#reviews" data-i18n="navReviews">Recenzii</a>
+                <a href="#contact" data-i18n="navContact">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <div class="lang-switcher">
+                    <button id="lang-ro" class="active">RO</button>
+                    <span>|</span>
+                    <button id="lang-en">EN</button>
+                </div>
+                <a href="tel:0766480730" class="btn btn-outline nav-cta desktop-only" data-i18n="btnReserve">Rezervă Masă</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav">
+        <a href="#home" data-i18n="navHome">Acasă</a>
+        <a href="#about" data-i18n="navAbout">Despre</a>
+        <a href="#menu" data-i18n="navMenu">Meniu</a>
+        <a href="#gallery" data-i18n="navGallery">Galerie</a>
+        <a href="#reviews" data-i18n="navReviews">Recenzii</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container fade-in-up">
+            <h1 data-i18n="heroTitle">Experiență autentică și preparate memorabile</h1>
+            <p data-i18n="heroSubtitle">Descoperă gustul perfect într-o atmosferă premium la Topraisar.</p>
+            <div class="hero-buttons">
+                <a href="tel:0766480730" class="btn btn-primary btn-large" data-i18n="btnCall">SUNĂ ACUM</a>
+                <a href="#contact" class="btn btn-outline btn-large" data-i18n="btnReserve">REZERVĂ MASĂ</a>
+                <a href="https://wa.me/40766480730" target="_blank" class="btn btn-whatsapp btn-large desktop-only">
+                    <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.029 18.88c-1.161 0-2.305-.292-3.318-.844l-3.677.964.984-3.595c-.607-1.052-.927-2.246-.926-3.468.001-3.825 3.113-6.937 6.937-6.937 1.856.001 3.598.723 4.907 2.034 1.31 1.311 2.031 3.054 2.03 4.908-.001 3.825-3.113 6.938-6.937 6.938z"/></svg>
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section bg-light">
+        <div class="container about-grid">
+            <div class="about-text scroll-anim fade-in-left">
+                <h2 class="section-title" data-i18n="aboutTitle">Bine ați venit la Turquoise</h2>
+                <p data-i18n="aboutP1">Situat în inima localității Topraisar, Restaurantul Turquoise oferă un spațiu primitor unde calitatea ingredientelor întâlnește pasiunea pentru gastronomie.</p>
+                <p data-i18n="aboutP2">Fie că vă doriți un prânz rapid, o cină relaxantă alături de familie sau o seară memorabilă, atmosfera noastră elegantă și meniul diversificat vă vor încânta simțurile. De la preparate tradiționale savuroase, la opțiuni moderne și delicioase de grill și pizza, avem câte ceva pentru fiecare gust.</p>
+                <ul class="about-features">
+                    <li><span class="icon">✨</span> <span data-i18n="aboutF1">Ingrediente proaspete și de calitate</span></li>
+                    <li><span class="icon">🍷</span> <span data-i18n="aboutF2">Atmosferă caldă și elegantă</span></li>
+                    <li><span class="icon">👨‍👩‍👧‍👦</span> <span data-i18n="aboutF3">Spațiu generos și prietenos cu familiile</span></li>
+                </ul>
+            </div>
+            <div class="about-image scroll-anim fade-in-right">
+                <img src="mainimage.png" alt="Restaurant interior" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="section menu-section bg-dark">
+        <div class="container text-center">
+            <h2 class="section-title text-light" data-i18n="menuTitle">Meniul Nostru</h2>
+            <p class="section-subtitle text-light" data-i18n="menuSubtitle">Descoperă preparatele noastre alese, gătite cu pasiune.</p>
+            
+            <div class="menu-categories">
+                <button class="menu-tab active" data-target="starters" data-i18n="catStarters">Aperitive & Supe</button>
+                <button class="menu-tab" data-target="main" data-i18n="catMain">Fel Principal</button>
+                <button class="menu-tab" data-target="grill" data-i18n="catGrill">Grill</button>
+                <button class="menu-tab" data-target="pizza" data-i18n="catPizza">Pizza</button>
+                <button class="menu-tab" data-target="desserts" data-i18n="catDesserts">Desert</button>
+                <button class="menu-tab" data-target="drinks" data-i18n="catDrinks">Băuturi</button>
+            </div>
+
+            <div class="menu-content">
+                <!-- Starters -->
+                <div class="menu-pane active" id="starters">
+                    <div class="menu-grid">
+                        <div class="menu-item scroll-anim zoom-in">
+                            <div class="menu-item-img" style="background-image: url('ciorbadeburta.png')"></div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <h3 data-i18n="itemSoup">Ciorbă de Burtă</h3>
+                                    <span class="price">25 Lei</span>
+                                </div>
+                                <p data-i18n="itemSoupDesc">Servită cu smântână, ardei iute și pâine caldă.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item scroll-anim zoom-in" style="transition-delay: 0.1s;">
+                            <div class="menu-item-img" style="background-image: url('starresfoodphoto2.png')"></div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <h3 data-i18n="itemBruschetta">Bruschete Mixte</h3>
+                                    <span class="price">28 Lei</span>
+                                </div>
+                                <p data-i18n="itemBruschettaDesc">Roșii, busuioc, prosciutto, somon afumat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main -->
+                <div class="menu-pane" id="main">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-img" style="background-image: url('maincourses.png')"></div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <h3 data-i18n="itemPasta">Paste Carbonara</h3>
+                                    <span class="price">38 Lei</span>
+                                </div>
+                                <p data-i18n="itemPastaDesc">Pancetta, gălbenuș de ou, parmezan, piper negru.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-img" style="background-image: url('maincourses1.png')"></div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <h3 data-i18n="itemSchnitzel">Șnițel de Pui cu Piure</h3>
+                                    <span class="price">42 Lei</span>
+                                </div>
+                                <p data-i18n="itemSchnitzelDesc">Piept de pui crocant, piure de cartofi cremos, salată.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grill -->
+                <div class="menu-pane" id="grill">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-img" style="background-image: url('platoowithfrenchfriesandsteak.png')"></div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <h3 data-i18n="itemRibs">Coaste de Porc BBQ</h3>
+                                    <span class="price">65 Lei</span>
+                                </div>
+                                <p data-i18n="itemRibsDesc">Coaste marinate la cuptor, cartofi prăjiți, sos BBQ.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-img" style="background-image: url('anotherbigplatoo.png')"></div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <h3 data-i18n="itemMici">Platou Tradițional (Mititei)</h3>
+                                    <span class="price">45 Lei</span>
+                                </div>
+                                <p data-i18n="itemMiciDesc">4 mititei, cartofi prăjiți, muștar, pâine.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pizza -->
+                <div class="menu-pane" id="pizza">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-img" style="background-image: url('https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80')"></div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <h3 data-i18n="itemPizzaTurquoise">Pizza Turquoise</h3>
+                                    <span class="price">42 Lei</span>
+                                </div>
+                                <p data-i18n="itemPizzaTurquoiseDesc">Sos roșii, mozzarella, prosciutto, ciuperci, măsline.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-img" style="background-image: url('https://images.unsplash.com/photo-1590947132387-155cc02f3212?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80')"></div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <h3 data-i18n="itemPizzaDiavola">Pizza Diavola</h3>
+                                    <span class="price">39 Lei</span>
+                                </div>
+                                <p data-i18n="itemPizzaDiavolaDesc">Sos roșii, mozzarella, salam picant, ardei iute.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="menu-pane" id="desserts">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-img" style="background-image: url('desert1.png')"></div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <h3 data-i18n="itemPapanasi">Papanași</h3>
+                                    <span class="price">28 Lei</span>
+                                </div>
+                                <p data-i18n="itemPapanasiDesc">Cu smântână și dulceață de afine sau vișine.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-img" style="background-image: url('desrt2.png')"></div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <h3 data-i18n="itemLavaCake">Lava Cake</h3>
+                                    <span class="price">30 Lei</span>
+                                </div>
+                                <p data-i18n="itemLavaCakeDesc">Prăjitură de ciocolată caldă servită cu înghețată de vanilie.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Drinks -->
+                <div class="menu-pane" id="drinks">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-img" style="background-image: url('drink.png')"></div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <h3 data-i18n="itemCocktail">Cocktail Turquoise</h3>
+                                    <span class="price">35 Lei</span>
+                                </div>
+                                <p data-i18n="itemCocktailDesc">Rom, blue curacao, suc de ananas, sirop de cocos.</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-img" style="background-image: url('drink2.png')"></div>
+                            <div class="menu-item-info">
+                                <div class="menu-item-header">
+                                    <h3 data-i18n="itemWine">Vinul Casei (Carafă)</h3>
+                                    <span class="price">40 Lei</span>
+                                </div>
+                                <p data-i18n="itemWineDesc">Vin alb/roșu demisec din regiunea Dobrogea.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery-section bg-light">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title" data-i18n="galleryTitle">Galeria Noastră</h2>
+                <p class="section-subtitle" data-i18n="gallerySubtitle">O privire în atmosfera și preparatele noastre.</p>
+            </div>
+            
+            <div class="masonry-grid">
+                <div class="gallery-item scroll-anim zoom-in" onclick="openLightbox(this)">
+                    <img src="platoowithfrenchfriesandsteak.png" alt="Platou cu cartofi prăjiți și carne" loading="lazy">
+                </div>
+                <div class="gallery-item scroll-anim zoom-in" onclick="openLightbox(this)">
+                    <img src="ciorbadeburta.png" alt="Ciorbă de burtă" loading="lazy">
+                </div>
+                <div class="gallery-item scroll-anim zoom-in" onclick="openLightbox(this)">
+                    <img src="pizza.png" alt="Pizza" loading="lazy">
+                </div>
+                <div class="gallery-item scroll-anim zoom-in" onclick="openLightbox(this)">
+                    <img src="drink.png" alt="Băutură" loading="lazy">
+                </div>
+                <div class="gallery-item scroll-anim zoom-in" onclick="openLightbox(this)">
+                    <img src="desert1.png" alt="Desert" loading="lazy">
+                </div>
+                <div class="gallery-item scroll-anim zoom-in" onclick="openLightbox(this)">
+                    <img src="lastphotointhegallerysection.png" alt="Interior restaurant" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="section reviews-section bg-dark">
+        <div class="container">
+            <h2 class="section-title text-light text-center" data-i18n="reviewsTitle">Ce spun clienții noștri</h2>
+            
+            <div class="reviews-carousel">
+                <div class="review-slide active">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"So good restaurant, Gordgina is perfect"</p>
+                    <p class="reviewer">- Sergei Galkevich</p>
+                </div>
+                <div class="review-slide">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Excellent food for affordable prices. Great service, friendly staff..."</p>
+                    <p class="reviewer">- Paul Vadeanu</p>
+                </div>
+                <div class="review-slide">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Nice staff, good food"</p>
+                    <p class="reviewer">- livio b</p>
+                </div>
+                <div class="review-slide">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Must visit. Reasonable prices, big portions and excellent staff. Delicious food as well."</p>
+                    <p class="reviewer">- Дончо Петров</p>
+                </div>
+                <div class="review-slide">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Unexpectedly good services and very tasty food!"</p>
+                    <p class="reviewer">- Liviu Gheorghe</p>
+                </div>
+                
+                <div class="carousel-controls">
+                    <button id="prevReview" aria-label="Previous Review">❮</button>
+                    <button id="nextReview" aria-label="Next Review">❯</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section class="section reservation-section text-center">
+        <div class="container scroll-anim fade-in-up">
+            <h2 class="section-title" data-i18n="resTitle">Rezervă masa ta astăzi</h2>
+            <p class="section-subtitle" data-i18n="resSubtitle">Perfect pentru cine în familie și seri speciale.</p>
+            <div class="res-buttons">
+                <a href="tel:0766480730" class="btn btn-primary btn-large" data-i18n="btnCallNow">SUNĂ ACUM</a>
+                <a href="https://wa.me/40766480730" target="_blank" class="btn btn-whatsapp btn-large">WHATSAPP</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Contact -->
+    <section id="contact" class="section contact-section bg-light">
+        <div class="container contact-grid">
+            <div class="contact-info scroll-anim fade-in-left">
+                <h2 class="section-title" data-i18n="contactTitle">Contact & Locație</h2>
+                
+                <div class="info-block">
+                    <h3 data-i18n="contactAddressTitle">Adresă</h3>
+                    <p>ȘOS NAȚIONALĂ 72A<br>907285 Topraisar, Constanța, România</p>
+                    <p class="small-text">Located in: Dalbey Activ Srl</p>
+                </div>
+                
+                <div class="info-block">
+                    <h3 data-i18n="contactPhoneTitle">Telefon</h3>
+                    <p><a href="tel:0766480730" class="phone-link">0766 480 730</a></p>
+                </div>
+                
+                <div class="info-block">
+                    <h3 data-i18n="contactHoursTitle">Program</h3>
+                    <ul class="hours-list">
+                        <li><span data-i18n="dayLuni">Luni</span> <span>9:30 am – 10:00 pm</span></li>
+                        <li><span data-i18n="dayMarti">Marți</span> <span>9:30 am – 10:00 pm</span></li>
+                        <li><span data-i18n="dayMiercuri">Miercuri</span> <span>9:30 am – 10:00 pm</span></li>
+                        <li><span data-i18n="dayJoi">Joi</span> <span>9:30 am – 10:00 pm</span></li>
+                        <li><span data-i18n="dayVineri">Vineri</span> <span>9:30 am – 10:00 pm</span></li>
+                        <li><span data-i18n="daySambata">Sâmbătă</span> <span>9:30 am – 10:00 pm</span></li>
+                        <li><span data-i18n="dayDuminica">Duminică</span> <span>9:30 am – 10:00 pm</span></li>
+                    </ul>
+                </div>
+
+                <div class="social-links mt-4">
+                    <a href="#" aria-label="Facebook"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a>
+                    <a href="#" aria-label="Instagram"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+                </div>
+            </div>
+            
+            <div class="contact-map scroll-anim fade-in-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2870.0883398410296!2d28.448424176646547!3d44.0135686710899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40badd783a449493%3A0xb7ab6ecb1d530855!2sRestaurant%20Turquoise%20Topraisar!5e0!3m2!1sen!2sro!4v1715873151241!5m2!1sen!2sro" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <a href="#" class="logo text-light">Turquoise</a>
+            <p>&copy; 2026 Restaurant Turquoise Topraisar. <span data-i18n="footerRights">Toate drepturile rezervate.</span></p>
+        </div>
+    </footer>
+
+    <!-- Sticky Mobile Action Bar -->
+    <div class="mobile-action-bar">
+        <a href="tel:0766480730" class="action-btn action-call">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span data-i18n="barCall">Sună</span>
+        </a>
+        <a href="#contact" class="action-btn action-reserve">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            <span data-i18n="barReserve">Rezervă</span>
+        </a>
+        <a href="https://wa.me/40766480730" target="_blank" class="action-btn action-wa">
+            <svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.029 18.88c-1.161 0-2.305-.292-3.318-.844l-3.677.964.984-3.595c-.607-1.052-.927-2.246-.926-3.468.001-3.825 3.113-6.937 6.937-6.937 1.856.001 3.598.723 4.907 2.034 1.31 1.311 2.031 3.054 2.03 4.908-.001 3.825-3.113 6.938-6.937 6.938z"/></svg>
+            <span>WhatsApp</span>
+        </a>
+    </div>
+
+    <!-- AI Chatbot -->
+    <div id="chatbot-widget" class="chatbot-widget">
+        <div class="chatbot-header" onclick="toggleChat()">
+            <span class="chatbot-title">🤖 AI Assistant</span>
+            <span class="chatbot-toggle-icon" id="chatbot-toggle-icon">💬</span>
+        </div>
+        <div class="chatbot-body" id="chatbot-body">
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot-message">Bună! Sunt asistentul AI Turquoise. Cu ce te pot ajuta? / Hello! I am the AI Turquoise assistant. How can I help you?</div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chat-input" placeholder="Scrie un mesaj... / Type a message..." onkeypress="handleChatKeyPress(event)">
+                <button onclick="sendMessage()">➤</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
